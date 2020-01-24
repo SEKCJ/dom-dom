@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", function () {
                 // Id Odd
                 case 1:
                     // Checks to see if the box being hidden is the first in the row
-                    if ((id_element - y) > 1) {
+                    if ((id_element - y) >= 1) {
                         // On copy of ID array, it sets the values to the left of the box clicked to blank
                         backup_array[y_index_element - y] = "";
                         console.log(backup_array);
