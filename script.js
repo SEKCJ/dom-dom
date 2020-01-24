@@ -100,12 +100,12 @@ window.addEventListener("DOMContentLoaded", function () {
                     if ((id_element - y) > 1) {
                         // On copy of ID array, it sets the values to the left of the box clicked to blank
                         backup_array[y_index_element - y] = "";
-
+                        console.log(backup_array);
                         /* Loop checks to see if values to the left of the box clicked are blank. If the values are blank, it loops
                         keeps checking until it finds one that isn't blank. Sets the last value to blank.  */
                         while (backup_array[y_index_element - y] == "") {
                             y++;
-                            hidden_element = document.getElementById(id_element - y);
+                            hidden_element = document.getElementById((id_element+1) - y);
                             hidden_element.classList.add("hidden");
                         }
                     } else {
